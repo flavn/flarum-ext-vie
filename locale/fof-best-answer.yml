@@ -1,0 +1,28 @@
+fof-best-answer:
+  admin:
+    permissions:
+      best_answer: Chọn câu trả lời hay nhất (người tạo Thảo luận)
+      best_answer_not_own_discussion: Chọn câu trả lời hay nhất (không phải người tạo Thảo luận)
+    settings:
+      title: "Cài đặt Câu trả lời hay nhất"
+      allow_select_own_post: "Cho phép người dùng chọn câu trả lời hay nhất"
+      select_best_answer_reminder_days: Nhắc người dùng chọn câu trả lời hay nhất sau X ngày
+      schedule_on_one_server: Use 'onOneServer()' directive for the task scheduler (requires Redis/Memcache)
+      schedule_stop_overnight: Prevent the reminder scheduler from running during unsocial hours (9pm - 8am server time)
+      schedule_log_output: Append scheduler output to log storage
+      remind_tag_ids: To restrict reminders to particular tags, enter the tag ID's here (comma seperated)
+      use_alt_ui: Use alternative layout (best answer buttons in post footer)
+  forum:
+    answered_badge: Đã trả lời
+    this_best_answer: Chọn câu trả lời hay nhất
+    remove_best_answer: Bỏ chọn câu trả lời hay nhất
+    best_answer_button: Câu trả lời hay nhất
+    best_answer_label: chọn bởi <a>{username}</a> {time_set}
+
+    notification:
+      content: Hãy lựa chọn câu trả lời hay nhất nếu câu hỏi của bạn nhận được câu trả lời
+      awarded: bài đăng của bạn đã được {username} chọn là câu trả lời hay nhất
+      awarded_email: Bài đăng của bạn đã được chọn là câu trả lời hay nhất
+      select_email_title: Did you manage to sort your problem?
+      preferences:
+        awarded_best_answer: Khi có người chọn bài đăng của tôi là câu trả lời hay nhất

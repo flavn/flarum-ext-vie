@@ -1,0 +1,129 @@
+bazaar:
+  admin:
+    loader:
+      is_loading: Đang xử lý..
+      error: Đã xuất hiện lỗi. Kiểm tra lịch sử và log của Flarum để biết thêm chi tiết. Đừng ngại báo cho chúng tôi.
+      refresh: Tải lại trang
+      close: Đóng
+      report_issue: Báo lỗi
+    nav:
+      title: Bazaar
+      description: Cửa hàng ứng dụng.
+    header:
+      extensions: Duyệt ứng dụng
+      tasks: Lịch sử tác vụ
+    modal:
+      dashboard:
+        title: Bảng điều khiển
+        visit-remote-dashboard: Tới bảng điều khiển
+        sync:
+          switch: Đồng bộ
+          description: >
+            Đồng bộ thông tin ứng dụng của bạn với {host} để nhận thông báo về phiên bản mới của ứng dụng bạn đã cài đặt.
+            Ngoài ra chúng tôi sẽ gửi cho bạn thông báo về các ứng dụng cần được cập nhật trong các ứng dụng bạn cài từ
+            Bazaar và đang sử dụng.
+      settings:
+        title: Flagrow Bazaar
+        field:
+          token:
+            label: API token
+            description: Api token là bắt buộc để truy cập api từ Flagrow.
+          use_cron_for_tasks:
+            label: Cronjobs
+            description: >
+              Sử dụng cronjobs để xử lý tác vụ Bazaar, các tiến trình này sẽ ít khi bị timeout.
+              Bạn cần điều chỉnh cấu hình
+              cronjob, xem thêm tại <a>the wiki</a>.
+            toggle: Sử dụng cron để thực thi tác vụ
+      connect-bazaar:
+        title: Kết nối
+        description: >
+          Connect your Flarum forum to your personal account on {host} to unlock advanced features; including
+          a dashboard that gives you an health overview of all your connected Flarum installations. We will
+          add more functionality like notifications when your forum contains outdated extensions or the ability
+          to update all Flarum installations centrally.
+      requirements:
+        file-permissions:
+          title: Quyền với tập tin
+          description: >
+            It seems Bazaar has insufficient permissions to write files
+            and/or directories, please review the list below. For further
+            information, refer to <a>the wiki</a>.
+        php-memory_limit:
+          title: Giới hạn bộ nhớ
+          description: >
+            We recommend allowing PHP to use at least {required} of memory, your php.ini currently allows {limit}.
+            Although we try to increase the memory limit during runtime, success depends on your hosting environment.
+            For further information, refer to <a>the wiki</a>.
+    page:
+      state:
+        no_results_available: >
+          Dường như không có kết quả nào có sẵn ở thời điểm hiện tại.
+        not_authorized: >
+          Your authorization against our flagrow.io api failed. Possibly an unstable internet connection is causing this.
+          Please refresh the page once your connection stabilised. If the problem persists, please get in touch with us.
+      button:
+        more: "Còn nữa, đang xem {current} trong tổng số {total}"
+        install: Cài đặt
+        uninstall: Gỡ bỏ
+        enable: Bật
+        disable: Tắt
+        update: Cập nhật
+        connect: Kết nối
+        favorite_button: "Ứng dụng yêu thích"
+        remove_favorite_button: "Xoá khỏi ứng dụng yêu thích"
+        subscribe: Đặt mua
+        unsubscribe: Bỏ đặt mua
+        connect_to_subscribe: Kết nối tài khoản Bazaar để đặt mua
+      extension:
+        installed: Ứng dụng đã được cài đặt
+        enabled: Ứng dụng đã được bật
+        vendor: Tác giả {vendor}
+        downloads: Tải xuống
+        installed_version: Đã cài đặt
+        highest_version: Mới nhất
+        favorites: Yêu thích
+        favorited: Đã yêu thích
+        pending: Úng dụng chờ tác vụ nền để hoàn thành
+        outdated: "Ứng dụng đã cũ, hãy cập nhật phiên bản mới là {new}"
+        premium: Có phí
+        subscribed: Đã mua
+        subscribe_check_failed: Hình như bạn đã huỷ quá trình thanh toán.
+        incompatible: Không thích hợp với bản Flarum của bạn
+        next_incompatible: Không thích hợp với bản Flarum tiếp theo
+        latest_incompatible: Không thích hợp với bản Flarum mới nhất
+      task:
+        header:
+          status: Trạng thái
+          command: Câu lệnh
+          output: Đầu ra
+          time: Thời gian
+          details: Chi tiết
+        attribute:
+          created_at: Tạo lúc
+          started_at: Bắt đầu lúc
+          finished_at: Hoàn thành lúc
+        status:
+          success: Thành công
+          exception: Có lỗi
+          working: Đang xử lý
+          unknown: Bó tay
+        command:
+          sync-lock: Đồng bộ tập tin composer.lock
+          sync-version: Đồng bộ phiên bản {extension}
+          install: Cài đặt {extension}
+          update: Cập nhật {extension}
+          uninstall: Gỡ bỏ {extension}
+        group:
+          today: Hôm nay
+          lastmonth: Tháng trước
+          older: Cũ hơn
+    search:
+      placeholder: Tìm kiếm
+      filter_installed: Đã cài đặt
+      filter_update: Có bản mới
+      filter_favorited: Dã thích
+      filter_subscribed: Đã mua
+      filter_premium: Có phí
+      filter_pending: Đang chờ
+      filter_languages: Ngôn ngữ
